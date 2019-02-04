@@ -1,5 +1,5 @@
 REM ### this script is for auto scanning using NAPS2 , that obviously must be installed beforehand.
-REM ### please check the NAPS2 location according to your system and scanning target place
+REM ### please check the NAPS2 location according to your system and scanning target place also
 
 @echo off
 cd C:\Program Files\NAPS2\
