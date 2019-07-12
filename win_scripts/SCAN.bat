@@ -1,15 +1,14 @@
-REM ### this script is for auto scanning using NAPS2 , that obviously must be installed beforehand.
-REM ### please check the NAPS2 location according to your system and scanning target place also
-
-chcp 1251 >nul
-
 @echo off
+chcp 1251 >nul
 cd C:\Program Files (x86)\NAPS2\
 
 :START
+SET id=""
 ECHO SCANNING...
 naps2.console -o "C:\Users\Anton\Google Диск\scans\$(YYYY)-$(MM)-$(DD)_$(hh)-$(mm)-$(ss).pdf"
-
-set /p id="Make another scan? (y/n): "
+ECHO[
+ECHO DONE!
+ECHO[
+set /p id="Make another scan? ('y' to proceed or any key to exit): "
 
 if "%id%" == "y" GOTO START
